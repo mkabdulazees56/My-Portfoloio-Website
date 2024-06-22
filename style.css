@@ -466,3 +466,39 @@ footer p {
   width: 100%;
   height: auto;
 }
+
+/* Add these styles for tabs */
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.tab-button {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 300ms ease;
+}
+
+.tab-button:hover {
+  background-color: #d0d0d0;
+}
+
+.tab-button.active {
+  background-color: #c0c0c0;
+}
+
+/* Ensure the projects are hidden when not active */
+.project-tab {
+  display: none;
+}
+
+.project-tab.active {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
